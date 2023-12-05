@@ -1,0 +1,82 @@
+<div class="grid grid-cols-8 md:grid-cols-10">
+  <div class="col-span-5 md:col-span-7  flex flex-col justify-center gap-10">
+    <div class="text-5xl font-bold">{{ name }}</div>
+    <div class="flex gap-10 justify-between mx-3">
+      <div
+        class="font-normal text-gray-700 dark:text-gray-400 flex flex-col justify-between items-center"
+      >
+        <div class="w-10">
+          <img src="{{ modeItem }}" alt="" class="" />
+        </div>
+        <div class="lowercase border-t-2 text-xs">
+          {{ mode }}
+        </div>
+      </div>
+      <div [ngStyle]="{ color: style.textColor }" class="font-bold">
+        {{ difficultyLevel }}
+      </div>
+      <div>Day: {{ days }}/{{ nights }}</div>
+    </div>
+  </div>
+  <div class="col-span-3 md:col-span-3 bg-yellow-100 m-5">
+    <app-filter-batches></app-filter-batches>
+  </div>
+</div>
+<!-- {
+  "id": 3,
+  "name": "DELHI-JAIPUR",
+  "startAt": "Delhi",
+  "endAt": "Jaipur",
+  "days": 4,
+  "nights": 3,
+  "mode": "WALK",
+  "difficultyLevel": "CHALLENGING",
+  "itinerary": {
+      "dayPlans": [
+          {
+              "dayCount": 1,
+              "place": "Delhi",
+              "activity": "Explore historical sites",
+              "distance": 0,
+              "accomodation": {
+                  "hotelName": "Royal Palace",
+                  "address": "Connaught Place",
+                  "roomType": "SUITE"
+              }
+          },
+          {
+              "dayCount": 2,
+              "place": "Agra",
+              "activity": "Visit Taj Mahal",
+              "distance": 210,
+              "accomodation": {
+                  "hotelName": "Mughal Heritage",
+                  "address": "Fatehabad Road",
+                  "roomType": "DELUXE"
+              }
+          },
+          {
+              "dayCount": 3,
+              "place": "Jaipur",
+              "activity": "Explore Amber Fort",
+              "distance": 250,
+              "accomodation": {
+                  "hotelName": "Rajasthan Palace",
+                  "address": "MI Road",
+                  "roomType": "ROYAL SUITE"
+              }
+          },
+          {
+              "dayCount": 4,
+              "place": "Jaipur",
+              "activity": "Shopping in local markets",
+              "distance": 0,
+              "accomodation": {
+                  "hotelName": "Rajasthan Palace",
+                  "address": "MI Road",
+                  "roomType": "ROYAL SUITE"
+              }
+          }
+      ]
+  }
+} -->

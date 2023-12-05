@@ -1,0 +1,121 @@
+#POST for tours
+{
+    "name": "MUMBAI-NASIK",
+    "startAt": "Mumbai",
+    "endAt": "Nasik",
+    "mode": "BICYCLE",
+    "difficultyLevel": "MODERATE",
+    "itinerary": {
+        "dayPlans": [
+            {
+                "dayCount": 1,
+                "place": "Mumbai",
+                "distance": 0.0,
+                "activity": "reporting between 5 pm to 7 pm. Introduction, tour briefing and ice breaker",
+                "accomodation": {
+                    "hotelName": "Hotel Mayur",
+                    "address": "SB road, Thane",
+                    "roomType": "TWIN_BED"
+                }
+            },
+            {
+                "dayCount": 2,
+                "place": "NASIK",
+                "distance": 150.0,
+                "activity": "Ride on Mumbai Agra road",
+                "accomodation": {
+                    "hotelName": "Dwaraka",
+                    "address": "Dwaraka",
+                    "roomType": "TWIN_BED"
+                }
+            },
+            {
+                "dayCount": 3,
+                "place": "NASIK",
+                "distance": 0,
+                "activity": "Breakfast, Certifiate distribution and tour ends. Participants return home",
+                "accomodation": {
+                    "hotelName": "Dwaraka",
+                    "address": "Dwaraka",
+                    "roomType": "TWIN_BED"
+                }
+            }
+        ]
+    }
+}
+
+#POST for batches
+{
+    "startDate": "11-10-2023",
+    "status": "ACTIVE",
+    "capacity": 10,
+    "perParticipantCost": 40000
+}
+{
+    "startDate": "29-10-2023",
+    "status": "CANCELLED",
+    "capacity": 5,
+    "perParticipantCost": 30000
+}
+{
+    "startDate": "11-11-2023",
+    "status": "ACTIVE",
+    "capacity": 15,
+    "perParticipantCost": 50000
+}
+
+#POST for Booking
+{
+    "date" : "2023-10-15",
+    "amount" : 10000.00,
+    "username" : "amar.pradhan@fakmail.com",
+    "batchId" : 1,
+    "travellers" : [
+        {
+            "name" : {
+                "first" : "Bhavana",
+                "last"  : "Pradhan"
+            },
+            "mobile" : {
+                "number" : "999999922222"
+            }
+        },
+        {
+            "name" : {
+                "first" : "Ramesh",
+                "last"  : "Pradhan"
+            },
+            "mobile" : {
+                "number" : "999999922222"
+            }
+        }
+    ]
+}
+
+{
+    "date" : "2023-10-16",
+    "amount" : 15000.00,
+    "username" : "Sameer.Yadav@fakmail.com",
+    "batchId" : 1,
+    "travellers" : [
+        {
+            "name" : {
+                "first" : "Seema",
+                "last"  : "Yadav"
+            },
+            "mobile" : {
+                "number" : "999999933333"
+            }
+        },
+        {
+            "name" : {
+                "first" : "Sachin",
+                "last"  : "Yadav"
+            },
+            "mobile" : {
+                "number" : "999999933334"
+            }
+        }
+    ]
+}
+
